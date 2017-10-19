@@ -55,7 +55,6 @@ changeHandler = (event) =>{
 
 
   render() {
-    this.state.bixiStations.length > 0 ? console.log("the state is " , this.state.bixiStations[0].s) : console.log("Still loading");
     return (
       <div className="App">
         <section className="search-header">

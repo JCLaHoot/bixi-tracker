@@ -4,17 +4,19 @@ import React from 'react';
 const Station = ({name, bikesAvailable, totalBikes}) => {
 
   const emojifyAvailableBikes = (bikesAvailable, totalBikes) => {
-    var text = "";
+    var text = [];
+    var available = ""
+    var unavailable = ""
     for (var i = 0; i < totalBikes; i++) {
       if(i < bikesAvailable) {
-        text += "🚲 ";
+        available += "🚲 ";
       } else {
-        // text += "💔";
-        // text += "😡";
-        text += "😢 ";
-
+        unavailable += "🚲 ";
       }
+
     }
+    text.push(available);
+    text.push(<span className="transparent">{unavailable}</span>)
     return text;
   }
 
@@ -23,7 +25,7 @@ const Station = ({name, bikesAvailable, totalBikes}) => {
         <h3>{name}</h3>
          <div className="station-info">
             <p>Bikes available: {bikesAvailable} </p>
-            <p>{emojifyAvailableBikes(bikesAvailable, totalBikes)}</p>
+            <p className="emoji">{emojifyAvailableBikes(bikesAvailable, totalBikes)}</p>
          </div>
     </li>
   );

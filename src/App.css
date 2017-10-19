@@ -66,6 +66,10 @@ p {
   color: #616161;
  }
 
+ .transparent {
+   opacity: 0.2;
+ }
+
 .search-header h1{
   font-size: 3.5em;
   margin: 0.5em auto;

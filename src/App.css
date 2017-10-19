@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+.App {
+  text-align: center;
+  font-family: "Roboto",sans-serif;
+  color: #424242;
+}
+
+
+/*
+RESPONSIVE TEXT & LAYOUT
+*/
+
+body {
+  font-size: 80%; }
+
+  .station {
+    width: 90%;
+  }
+
+@media (min-width: 601px) {
+  body {
+    font-size: 100%; }
+  .station {
+    width: 85%;
+  }
+  }
+
+@media (min-width: 993px) {
+  body {
+    font-size: 120%; }
+  .station {
+    width: 75%;
+  }
+  }
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 140%; }
+  .station {
+    width: 60%;
+  }
+  }
+
+
+  /*
+  TEXT STYLES
+  */
+
+h1 {
+  font-size: 4em; }
+h2 {
+  font-size: 3.5em; }
+h3 {
+  font-size: 3em; }
+h4 {
+  font-size: 2.5em; }
+h5 {
+  font-size: 2em; }
+h6 {
+  font-size: 1.5em; }
+p {
+  font-size: 1em;
+  color: #616161;
+ }
+
+.search-header h1{
+  font-size: 3.5em;
+  margin: 0.5em auto;
+  color: #fff;
+}
+
+.search-header h2{
+  font-size: 2.5em;
+  margin: 0.75em auto;
+  color: #fff;
+}
+
+.station h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+  padding-right: 2em;
+  width: 35%;
+  display: table-cell;
+}
+
+.station p {
+  font-size: 1em;
+  padding-bottom: 1em;
+  padding-top: 0;
+  margin-top: 0;
+
+}
+
+  /*
+  Layout
+  */
+
+.station {
+  margin: 2em auto;
+  text-align: left;
+  display: table;
+}
+
+.station-info {
+  display: table-cell;
+  vertical-align: top;
+  /*margin-left: 30px;*/
+  width: 55%;
+  /*padding-top: 0;*/
+  border-bottom: 1px solid #E0E0E0;
+}
+
+
+.search-header {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #606060;
+  background-image: url('./img/bixi.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+}
+
+/*
+Search Bar
+*/
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-bar{
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+}
+
+/*
+Stations
+*/
